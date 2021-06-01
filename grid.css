@@ -1,0 +1,52 @@
+.layout{
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+.layout{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 100px 50px auto 100px;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "aside main"
+    "footer footer"
+    ;
+}
+body{
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+html{
+    height: 100%;
+}
+.header{
+    grid-area: header;
+    background: rgb(91,83,187);
+background: linear-gradient(90deg, rgba(91,83,187,1) 19%, rgba(155,155,203,1) 55%, rgba(0,212,255,1) 100%);
+}
+.nav{
+    grid-area: nav;
+    background: rgb(91,83,187);
+background: linear-gradient(90deg, rgba(91,83,187,1) 19%, rgba(155,155,203,1) 55%, rgba(0,212,255,1) 100%);
+}
+.aside{
+    grid-area: aside;
+    background: rgb(91,83,187);
+background: linear-gradient(90deg, rgba(91,83,187,1) 19%, rgba(155,155,203,1) 55%, rgba(0,212,255,1) 100%);
+}
+.main{
+    grid-area: main;
+    background: rgb(91,83,187);
+    background: linear-gradient(90deg, rgba(91,83,187,1) 19%, rgba(155,155,203,1) 55%, rgba(0,212,255,1) 100%);
+}
+.footer{
+    grid-area: footer;
+    background: rgb(91,83,187);
+background: linear-gradient(90deg, rgba(91,83,187,1) 19%, rgba(155,155,203,1) 55%, rgba(0,212,255,1) 100%);
+}
+
+
